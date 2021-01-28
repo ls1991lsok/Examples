@@ -1,0 +1,5 @@
+results/
+lcs-omp/results/
+*.o
+LCS
+lcs-omp/lcs-omp
