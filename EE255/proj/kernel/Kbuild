@@ -1,0 +1,1 @@
+obj-y += sys_set_rtmon.o sys_cancel_rtmon.o
