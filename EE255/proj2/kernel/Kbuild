@@ -1,0 +1,1 @@
+obj-y += sys_set_rtmon.o sys_cancel_rtmon.o sys_print_rtmon.o sys_wait_until_next_period.o

@@ -1,0 +1,1 @@
+obj-y += segment_info.o vm_areas.o

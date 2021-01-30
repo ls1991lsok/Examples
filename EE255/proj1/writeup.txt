@@ -1,0 +1,15 @@
+1. How does a system call execute? Explain the steps from making the call in the userspace process to returning from the call with a result.
+
+A system call executes by first changing from user mode to kernel mode trough a system interrupt (trap). The function will then be handled in the kernel space before switching back to userspace.
+
+2. When does access to data structures in userspace need to be synchronized?
+
+When there is a shared resource that could be used by multiple processes.
+
+3. What synchronization mechanisms can be used to access shared kernel data structures safely? List them.
+
+Atomic Operations, Locking, and Mutexes
+
+4. Can spinlocks be used on single-processor platforms? Why or why not?
+
+No because since there is only a single thread that can be run at a time then sending a thread to a busy-wait loop would require more overhead than if there was just a simple lock in place. 
